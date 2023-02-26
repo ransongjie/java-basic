@@ -1,0 +1,42 @@
+package com.xcrj.datatypeme;
+
+import java.util.Date;
+
+public class DataType {
+    public static void main(String[] args) {
+        //整数
+        byte abyte=127;
+        System.out.println(abyte);
+        short ashort=300;
+        System.out.println(ashort);
+        int aint=333;
+        System.out.println(aint);
+        long along=3333;
+        System.out.println(along);
+        //浮点数
+        float afloat=30.1f;
+        System.out.println(afloat);
+        double adouble=30.2;
+        System.out.println(adouble);
+        //字符
+        char achar='e';
+        System.out.println(achar);
+        //布尔
+        boolean aboolean=true;
+        System.out.println(aboolean);
+        //String
+        String aString="abc";
+        System.out.println(aString);
+        //时间
+        Date aDate=new Date();
+        System.out.println(aDate);
+        //数组
+        int[] aintarr=new int[3];
+        aintarr[0]=1;
+        aintarr[1]=2;
+        aintarr[2]=3;
+        System.out.println(aintarr);
+        int[] bintarr=new int[]{1,2,3};
+        System.out.println(bintarr);
+    }
+}
