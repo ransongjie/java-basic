@@ -1,7 +1,10 @@
-package com.xcrj.datatypeme;
+package com.xcrj.data_type;
 
 import java.util.Date;
-
+/*
+ 变量，常量
+ 类型分类, 类型范围, 字面量, 默认值, 类型转换
+ */
 public class DataType {
     public static void main(String[] args) {
         //整数

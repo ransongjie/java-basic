@@ -1,4 +1,4 @@
-package com.xcrj.datatypeme;
+package com.xcrj.data_type;
 
 //数据类型转换
 public class TypeConvertion {

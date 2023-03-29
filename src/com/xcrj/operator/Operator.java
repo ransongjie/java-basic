@@ -1,6 +1,6 @@
-package com.xcrj.operatorme;
+package com.xcrj.operator;
 
-public class Operatorme {
+public class Operator {
     //赋值, 算数, 关系, 逻辑, 位, 三元, instanceof
     public static void main(String[] args) {
         //赋值, =, +=, -= ...
@@ -46,7 +46,7 @@ public class Operatorme {
         int dint=20;
         System.out.println(cint&dint);
         System.out.println(cint|dint);
-        System.out.println(~cint);
+        System.out.println(~cint);//按位取反
         System.out.println(cint^dint);
         ///不改变符号位
         System.out.println(cint<<1);

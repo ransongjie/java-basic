@@ -1,4 +1,4 @@
-package com.xcrj.datatypeme;
+package com.xcrj.data_type;
 
 public class TypeConvert {
     public static void main(String[] args) {
