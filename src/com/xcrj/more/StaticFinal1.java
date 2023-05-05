@@ -1,4 +1,4 @@
-package com.xcrj.keywords;
+package com.xcrj.more;
 
 public class StaticFinal1 {
     //编译期优化

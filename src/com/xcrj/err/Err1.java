@@ -18,7 +18,8 @@ public class Err1 {
         // test5();
         // test6();
         // test7();
-        test8();
+        // test8();
+        test9();
     }
 
     //Exception必须捕获
@@ -134,10 +135,7 @@ public class Err1 {
     }
     
     /**
-     * finally 与 return
-     * finally中不要书写return
-     * try中有return finally中有return, finally中的return会被忽略, 修改变量的值不起作用
-     * try 中 return a+b的值已经存储到了jvm创建的临时变量中，finally对这个临时变量不可见
+     * try和finally中都有return, 忽略try中的return
      */
     public static void test9(){
         int r=test9a();
@@ -146,9 +144,7 @@ public class Err1 {
     }
     public static int test9a(){
         int a=10;
-        // int b=20;
         try {
-            // return a+b;
             return a;
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -156,8 +152,26 @@ public class Err1 {
             a=100;
             return a;
         }
+    }
 
-        // return a+b;
-        // return a;//编译报错
+    /**
+     * 只有try中有return a+b，返回值不能被finally中的操作改变
+     * a+b的值已经存储到了jvm创建的临时变量中，finally对这个临时变量不可见
+     */
+    public static void test10(){
+        int a=test10a();
+        System.out.println(a);//45
+    }
+    public static int test10a(){
+        int a=20;
+        try {
+            return a+25;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }finally{
+            System.out.println(a);//20
+            a=a+10;//不起作用
+        }
+        return a;
     }
 }
