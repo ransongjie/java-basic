@@ -90,7 +90,7 @@ public class Err1 {
     }
 
     //finally 与 return
-    //try和finally中都没有return 语句，修改变量的值起作用
+    //try和finally中都没有return语句，修改变量的值起作用
     public static void test7(){
         int r=test7a();
         //120
@@ -100,6 +100,7 @@ public class Err1 {
         int a=10;
         int b=20;
         try {
+            a=30;
             throw new RuntimeException("出现异常");
         } catch (Exception e) {
             System.out.println(e.getMessage());

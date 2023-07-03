@@ -5,10 +5,13 @@ package com.xcrj.more;
  */
 public class CompileStr {
     public static void main(String[] args) {
-        
+        test1();
     }
 
     public static void test1() {
-        
+        String xcrj=new String("xcrj");
+        String xcrjIn=xcrj.intern();
+        String xcrj2="xcrj";
+        System.out.println(xcrjIn==xcrj2);
     }
 }
